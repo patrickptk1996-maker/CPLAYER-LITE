@@ -19,6 +19,4 @@ public class MainActivity extends Activity {
 
         setContentView(webView);
 
-        webView.loadUrl("http://www.pepinoplay.com/dashboard.php");
-    }
-}
+    webView.loadUrl("https://www.google.com");
