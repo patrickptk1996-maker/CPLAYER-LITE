@@ -1,3 +1,4 @@
+
 name: Gerar APK CPLAYER LITE
 
 on:
@@ -27,6 +28,9 @@ jobs:
 
       - name: Configurar Android
         uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: true
+          log-accepted-android-sdk-licenses: false
 
       - name: Compilar APK
         run: gradle assembleDebug
