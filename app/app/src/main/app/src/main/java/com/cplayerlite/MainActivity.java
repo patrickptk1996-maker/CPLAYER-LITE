@@ -1,9 +1,9 @@
+
 package com.cplayerlite;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -11,12 +11,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        WebView webView = new WebView(this);
+        TextView texto = new TextView(this);
+        texto.setText("CPLAYER LITE FUNCIONANDO!");
+        texto.setTextSize(24);
+        texto.setGravity(17);
 
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setDomStorageEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-
-        setContentView(webView);
-
-    webView.loadUrl("https://www.google.com");
+        setContentView(texto);
+    }
+}
